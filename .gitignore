@@ -8,8 +8,9 @@
 /out/
 next-env.d.ts
 
-# scratch (image sourcing / temp build output)
+# scratch (image sourcing / temp build output / design placeholders)
 /.tmp_img/
+/temp/
 
 # build artifact (zipped out/, used only for manual Hostinger upload)
 /littlejoes-site.zip

@@ -25,8 +25,8 @@ export function HeroSection() {
       <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-6 sm:py-20 lg:grid-cols-12 lg:gap-10 lg:px-8 lg:py-28">
         {/* Copy */}
         <div className="lg:col-span-7 lg:pr-6">
-          <p className="animate-fade-up glass inline-flex items-center gap-2 rounded-full px-4 py-1.5 text-xs font-semibold uppercase tracking-brand text-leaf-200">
-            <LeafIcon className="h-4 w-4 text-leaf-400" />
+          <p className="animate-fade-up inline-flex items-center gap-2 rounded-full bg-forest-950/85 px-4 py-1.5 text-xs font-semibold uppercase tracking-brand text-[#e9b94e] shadow-soft ring-1 ring-[#e9b94e]/40 backdrop-blur-sm">
+            <LeafIcon className="h-4 w-4 text-[#e9b94e]" />
             Hampshire&rsquo;s local tree team
           </p>
 

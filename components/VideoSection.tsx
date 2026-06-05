@@ -61,18 +61,23 @@ export function VideoSection() {
                   trackEvent("youtube_play", { location: "gallery_facade" });
                   setPlaying(true);
                 }}
-                className="surface-mesh group absolute inset-0 flex flex-col items-center justify-center gap-4 text-bone-50"
-                aria-label="Play video gallery"
+                className="group absolute inset-0 block overflow-hidden"
+                aria-label="Play Little Joe's Tree Services video on YouTube"
               >
-                <span className="relative flex h-24 w-24 items-center justify-center rounded-full">
-                  <span aria-hidden className="absolute inset-0 rounded-full bg-emerald-400/30 blur-md animate-pulse-glow" />
-                  <span className="relative flex h-20 w-20 items-center justify-center rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 text-forest-950 shadow-glow-emerald transition-transform duration-300 ease-spring group-hover:scale-110">
-                    <Play className="ml-1 h-8 w-8 fill-current" aria-hidden />
-                  </span>
-                </span>
-                <span className="relative text-lg font-semibold">Watch our recent jobs</span>
-                <span className="relative text-sm text-bone-300">
-                  Tap to play, loads only when you click
+                <picture>
+                  <source srcSet="/video/youtube-poster.webp" type="image/webp" />
+                  <img
+                    src="/video/youtube-poster.jpg"
+                    alt="Little Joe's Tree Services on YouTube, tap to watch"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-brand group-hover:scale-[1.03]"
+                  />
+                </picture>
+                {/* darken slightly on hover for feedback */}
+                <span aria-hidden className="absolute inset-0 bg-forest-950/0 transition-colors duration-300 group-hover:bg-forest-950/25" />
+                {/* clear play affordance + hover hint */}
+                <span className="absolute bottom-4 left-1/2 inline-flex -translate-x-1/2 items-center gap-2 rounded-full bg-forest-950/75 px-4 py-2 text-sm font-semibold text-white shadow-soft ring-1 ring-white/15 backdrop-blur-sm">
+                  <Play className="h-4 w-4 fill-current text-leaf-400" aria-hidden />
+                  Tap to watch on YouTube
                 </span>
               </button>
             )}
