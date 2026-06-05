@@ -1,16 +1,17 @@
 import { Marquee } from "./Marquee";
 import { LeafIcon } from "./icons/ServiceIcons";
+import { siteConfig } from "@/site-config";
 
 /**
- * Moving trust strip, a seamless marquee of credential pills on a warm cream
- * band. Pauses on hover, respects reduced-motion.
+ * Moving trust strip, a seamless marquee of credential pills floating over the
+ * woodland backdrop. Pauses on hover, respects reduced-motion.
  */
 const items = [
   "NPTC & City & Guilds qualified",
   "Fully insured",
   "Free, no-obligation estimates",
   "24/7 emergency call-outs",
-  "94% recommended locally",
+  `${siteConfig.reviews.fiveStarPercent}% rated us 5 stars`,
   "Hampshire's local tree team",
   "Tidy finish, every job",
 ];

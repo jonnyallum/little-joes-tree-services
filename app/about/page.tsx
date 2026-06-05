@@ -85,10 +85,10 @@ export default function AboutPage() {
 
               <div className="rounded-2xl border border-forest-600/20 surface-forest p-6 text-bone-100 shadow-card">
                 <p className="text-4xl font-semibold text-bone-50">
-                  {siteConfig.reviews.recommendPercent}%
+                  {siteConfig.reviews.fiveStarPercent}%
                 </p>
                 <p className="mt-1 text-sm text-bone-300">
-                  of customers recommend us, based on {siteConfig.reviews.count} reviews on{" "}
+                  of customers rated us 5 stars, across {siteConfig.reviews.count} reviews on{" "}
                   {siteConfig.reviews.source}.
                 </p>
                 <Link

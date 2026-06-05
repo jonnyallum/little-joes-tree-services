@@ -1,6 +1,7 @@
 import { reviews, reviewCount } from "@/lib/reviews";
 import { Container } from "./ui/Container";
 import { TestimonialCard } from "./TestimonialCard";
+import { siteConfig } from "@/site-config";
 
 /**
  * Every review, full text, in a masonry layout. Used on the /reviews page.
@@ -16,11 +17,12 @@ export function AllReviews() {
             Every review
           </p>
           <h2 className="font-display text-4xl font-semibold leading-[1.05] text-forest-900 sm:text-5xl">
-            All {reviewCount} reviews
+            All {siteConfig.reviews.count} reviews
           </h2>
           <p className="mt-4 text-lg leading-relaxed text-bone-700">
-            Genuine, verified reviews from Facebook, Google and Bark. Nothing invented,
-            nothing cherry-picked, this is the lot.
+            Genuine, verified reviews from Google, Facebook and Bark, nothing invented,
+            nothing cherry-picked. Showing the {reviewCount} with a written comment; the
+            rest left a 5-star rating.
           </p>
         </div>
 

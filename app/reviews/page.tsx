@@ -15,7 +15,7 @@ const breadcrumbs = [
 
 export const metadata: Metadata = pageMetadata({
   title: "Reviews | Little Joe's Tree Services Hampshire",
-  description: `${siteConfig.reviews.recommendPercent}% of customers recommend Little Joe's Tree Services, based on ${siteConfig.reviews.count} reviews. See why Hampshire customers trust us, or leave your own review.`,
+  description: `${siteConfig.reviews.fiveStarPercent}% of customers rated Little Joe's Tree Services 5 stars, across ${siteConfig.reviews.count} reviews. See why Hampshire customers trust us, or leave your own review.`,
   path: "/reviews",
 });
 

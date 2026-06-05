@@ -2,10 +2,11 @@
  * JSON-LD structured data generators.
  *
  * Rule from the SEO brief: schema must match VISIBLE page content and never be
- * misleading. Notably we do NOT emit an aggregateRating, the verified figure is
- * a 94% "recommendation rate", not an average star rating, so inventing a
- * ratingValue would be misleading. Add aggregateRating only when a genuine
- * average star rating exists (see README → manual items).
+ * misleading. We deliberately do NOT emit an aggregateRating: only the Google
+ * reviews carry a verified per-review star rating (Facebook is "recommends",
+ * Bark doesn't expose stars), and self-serving aggregateRating markup on a
+ * business's own site is discouraged by Google. The on-page figure ("98% rated
+ * us 5 stars") is for humans, not a schema ratingValue.
  */
 
 import { siteConfig, absoluteUrl } from "@/site-config";

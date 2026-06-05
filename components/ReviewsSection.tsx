@@ -8,11 +8,11 @@ import { featuredReviews, hasReviews } from "@/lib/reviews";
 import { siteConfig } from "@/site-config";
 
 /**
- * Reviews & trust, bold aggregate centrepiece (animated 94%) + review CTAs.
+ * Reviews & trust, bold aggregate centrepiece (animated 5-star %) + review CTAs.
  * Individual testimonials render only when genuine ones exist in lib/reviews.ts.
  */
 export function ReviewsSection({ showGrid = true }: { showGrid?: boolean } = {}) {
-  const { recommendPercent, count, source } = siteConfig.reviews;
+  const { fiveStarPercent, count, source } = siteConfig.reviews;
 
   return (
     <section id="reviews" className="py-20 sm:py-24 lg:py-28">
@@ -42,12 +42,12 @@ export function ReviewsSection({ showGrid = true }: { showGrid?: boolean } = {})
               </div>
               <p className="mt-6 font-display text-7xl font-semibold leading-none sm:text-8xl">
                 <span className="text-gradient-static">
-                  <AnimatedCounter to={recommendPercent} suffix="%" />
+                  <AnimatedCounter to={fiveStarPercent} suffix="%" />
                 </span>
               </p>
-              <p className="mt-3 text-xl font-medium text-forest-900">recommend us</p>
+              <p className="mt-3 text-xl font-medium text-forest-900">rated us 5 stars</p>
               <p className="mx-auto mt-4 max-w-xl text-bone-700">
-                Based on <AnimatedCounter to={count} className="font-semibold text-forest-900" /> reviews
+                Across <AnimatedCounter to={count} className="font-semibold text-forest-900" /> reviews
                 on {source}. Customers want to know the person doing the work is qualified,
                 insured, sensible on site and respectful of their property, that&rsquo;s
                 exactly what we aim to give you.

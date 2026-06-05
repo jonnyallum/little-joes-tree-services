@@ -81,7 +81,7 @@ export function HeroSection() {
                 ))}
               </span>
               <span className="font-semibold text-white">
-                <AnimatedCounter to={siteConfig.reviews.recommendPercent} suffix="%" /> recommend us
+                <AnimatedCounter to={siteConfig.reviews.fiveStarPercent} suffix="%" /> rated us 5&#9733;
               </span>
             </span>
             <span className="hidden h-4 w-px bg-white/25 sm:block" />
@@ -105,10 +105,10 @@ export function HeroSection() {
             </div>
 
             <p className="mt-5 font-display text-6xl font-semibold leading-none text-forest-900">
-              <AnimatedCounter to={siteConfig.reviews.recommendPercent} suffix="%" />
+              <AnimatedCounter to={siteConfig.reviews.fiveStarPercent} suffix="%" />
             </p>
             <p className="mt-2 text-bone-700">
-              of local customers recommend us, based on{" "}
+              of customers rated us 5 stars, across{" "}
               <AnimatedCounter to={siteConfig.reviews.count} className="font-semibold text-forest-900" /> reviews.
             </p>
 

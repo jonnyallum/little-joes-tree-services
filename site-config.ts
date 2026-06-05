@@ -52,9 +52,19 @@ export const siteConfig = {
   // reviews compiled into lib/reviews-data.ts (re-run scripts/build-reviews.mjs
   // and bump this if the source files change).
   reviews: {
-    recommendPercent: 94,
-    count: 89,
-    source: "Facebook, Google & Bark",
+    // % of customers who rated us 5 stars. Derived from the reviews with a
+    // VERIFIED per-review star rating (the 41 Google reviews: 40 of 41 = 5★ =
+    // 98%). Facebook reviews are "recommends" and Bark doesn't expose per-review
+    // stars, so we use the conservative, verifiable Google figure. Re-check after
+    // running scripts/build-reviews.mjs (it prints the counted figures).
+    fiveStarPercent: 98,
+    // Total genuine reviews across platforms: Facebook 23 + Bark 65 + Google 45
+    // (41 written incl. the existing 5, minus cross-platform duplicates, + 4
+    // star-only ratings). 125 carry a written comment and are shown as
+    // testimonials; the rest left a star rating only. Re-run build-reviews.mjs
+    // (it prints the counted figures) after editing reviews/*.
+    count: 129,
+    source: "Google, Facebook & Bark",
   },
 
   /* ------------------------------------------------------------- service area */
