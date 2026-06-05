@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Deep forest base — sits under the fixed woodland backdrop so any gap
+       reads as green, never cream/white. */
+    --color-bg: 4 25 15;
+    --color-fg: 31 42 37;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: rgb(var(--color-bg));
+    color: rgb(var(--color-fg));
+    font-feature-settings: "kern", "liga", "calt";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-fraunces), ui-serif, Georgia, serif;
+    letter-spacing: -0.015em;
+  }
+
+  :focus-visible {
+    outline: 2px solid theme("colors.emerald.500");
+    outline-offset: 3px;
+    border-radius: 3px;
+  }
+
+  ::selection {
+    background-color: theme("colors.leaf.400");
+    color: theme("colors.forest.950");
+  }
+
+  /* Branded scrollbar for a more considered feel. */
+  ::-webkit-scrollbar { width: 12px; height: 12px; }
+  ::-webkit-scrollbar-track { background: theme("colors.bone.100"); }
+  ::-webkit-scrollbar-thumb {
+    background: theme("colors.forest.700");
+    border: 3px solid theme("colors.bone.100");
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: theme("colors.forest.600"); }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .prose-brand {
+    @apply max-w-prose text-[1.0625rem] leading-relaxed text-bone-800;
+  }
+  .prose-brand p + p { @apply mt-4; }
+
+  /* Deep forest scrim — sits over the woodland photo on dark sections (footer,
+     ticker) so white text stays readable. Semi-transparent: the photo still
+     reads through it. */
+  .surface-forest {
+    background-color: rgba(5, 32, 21, 0.80);
+    background-image:
+      radial-gradient(120% 140% at 50% -10%, rgba(108, 191, 69, 0.12) 0%, rgba(108, 191, 69, 0) 45%),
+      linear-gradient(180deg, rgba(4, 25, 15, 0.30), rgba(4, 25, 15, 0.55));
+  }
+
+  /* Hero & CTA scrim — a clean, subtle dark vignette over the woodland photo
+     (no green glow-blobs, no blur) just enough to keep white headlines legible.
+     Darker top & bottom, clear through the middle so the god-rays show. */
+  .surface-mesh {
+    background-image: linear-gradient(180deg, rgba(4, 25, 15, 0.34) 0%, rgba(4, 25, 15, 0.10) 44%, rgba(4, 25, 15, 0.44) 100%);
+  }
+
+  /* Soft cool cream surface — the calm light counterpoint, faint green washes. */
+  .surface-cream {
+    background-color: theme("colors.cream.50");
+    background-image:
+      radial-gradient(60% 55% at 12% 0%, rgba(108, 191, 69, 0.10) 0%, transparent 55%),
+      radial-gradient(55% 60% at 92% 10%, rgba(21, 160, 106, 0.10) 0%, transparent 55%);
+  }
+
+  /* Solid white content card floating over the forest backdrop. */
+  .surface-card {
+    background-color: #ffffff;
+    border: 1px solid rgba(10, 61, 42, 0.07);
+  }
+
+  /* Glassmorphism panels. */
+  .glass {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(14px) saturate(120%);
+    -webkit-backdrop-filter: blur(14px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.16);
+  }
+  .glass-light {
+    background: rgba(255, 255, 255, 0.78);
+    backdrop-filter: blur(12px) saturate(130%);
+    -webkit-backdrop-filter: blur(12px) saturate(130%);
+    border: 1px solid rgba(10, 61, 42, 0.08);
+  }
+}
+
+@layer utilities {
+  .tap-safe { min-height: 44px; }
+
+  /* Headline accent words — SOLID premium gold (no green gradient, no outline),
+     so they pop warmly off the woodland. A subtle dark shadow keeps them crisp
+     over the brightest sunlit patches. */
+  .text-gradient {
+    color: #e3ad3c;
+    text-shadow: 0 1px 2px rgba(4, 25, 15, 0.5);
+  }
+  .text-gradient-static {
+    background: linear-gradient(110deg, theme("colors.forest.700"), theme("colors.emerald.500"));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Subtle emerald hairline edge (cheap — no mask-composite). */
+  .border-gradient {
+    position: relative;
+  }
+  .border-gradient::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    border: 1px solid rgba(108, 191, 69, 0.30);
+    pointer-events: none;
+  }
+
+  /* White text over the woodland photo — keeps it legible without a heavy box.
+     A tighter, darker pair carries contrast through the brightest sunlit patches. */
+  .text-shadow-forest {
+    text-shadow: 0 1px 2px rgba(4, 25, 15, 0.6), 0 2px 10px rgba(4, 25, 15, 0.5), 0 0 22px rgba(4, 25, 15, 0.3);
+  }
+
+  /* Fixed full-bleed woodland backdrop layer (see components/ForestBackdrop). */
+  .forest-backdrop {
+    position: fixed;
+    inset: 0;
+    z-index: -10;
+    pointer-events: none;
+  }
+  .forest-backdrop img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  /* Green scrim over the photo: keeps the whole page cohesively forest-toned
+     and guarantees contrast for floating white/cream cards. */
+  .forest-backdrop::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(180deg, rgba(6, 40, 26, 0.30) 0%, rgba(7, 48, 31, 0.16) 45%, rgba(5, 30, 20, 0.40) 100%),
+      radial-gradient(120% 70% at 50% 0%, rgba(150, 220, 120, 0.12) 0%, transparent 55%);
+  }
+
+  /* Film-grain / noise overlay for tooth & depth (procedural, no image). */
+  .grain::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    opacity: 0.08;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 160px 160px;
+  }
+  .grain-strong::after { opacity: 0.14; }
+
+  /* Edge fade mask for marquees. */
+  .mask-fade-x {
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+    mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  }
+
+  .hover-lift {
+    transition: transform 0.4s cubic-bezier(0.22,1,0.36,1), box-shadow 0.4s cubic-bezier(0.22,1,0.36,1);
+  }
+  .hover-lift:hover { transform: translateY(-6px); }
+
+  /* Animated conic spotlight (used sparingly behind hero focal points). */
+  .spotlight {
+    background: conic-gradient(from 180deg at 50% 50%, rgba(21,160,106,0) 0deg, rgba(21,160,106,0.18) 90deg, rgba(108,191,69,0.16) 200deg, rgba(21,160,106,0) 360deg);
+  }
+}

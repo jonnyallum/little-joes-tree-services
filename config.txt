@@ -1,0 +1,14 @@
+export const siteConfig = {
+  facebookUrl: "https://www.facebook.com/profile.php?id=100064091166943",
+  googleReviewUrl: "https://search.google.com/local/writereview?placeid=ChIJ1TFyb_2GlSwRhFQt81c3w0Q",
+  youtubePlaylistUrl: "https://youtube.com/playlist?list=PLmh5zDJCEdDclDC5r8phPDsO_RzpeB4m0&si=iOLHsJ8RfU0odqb-",
+  youtubePlaylistId: "PLmh5zDJCEdDclDC5r8phPDsO_RzpeB4m0",
+  youtubePlaylistEmbedUrl: "https://www.youtube.com/embed/videoseries?list=PLmh5zDJCEdDclDC5r8phPDsO_RzpeB4m0"
+}
+
+
+For YouTube embeds, use the playlist embed URL format:
+https://www.youtube.com/embed/videoseries?list=PLAYLIST_ID
+
+Do not render several iframe embeds at once above the fold.
+Use thumbnail-first lazy loading where possible.

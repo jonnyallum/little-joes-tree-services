@@ -1,0 +1,404 @@
+Platform: Bark
+Business: Little’tree service
+
+Name: John
+Platform: Bark
+Date: 14 February 2025
+Service: Tree Surgery & Removal
+Review: Quoted on the Tuesday, work completed on the Thursday. Very punctual, professional, polite and tidied up after job complete. Would highly recommend!
+
+Name: Krys Greenland
+Platform: Bark
+Date: 27 January 2025
+Service: Tree Surgery & Removal
+Review: Great, quick service. Very professional
+
+Name: Krys Greenland
+Platform: Bark
+Date: 24 January 2025
+Service: Tree Surgery & Removal
+Review: Great job cutting up a fallen ash tree. Quick response and very professional. Thank you!
+
+Name: Anthony Phinn
+Platform: Bark
+Date: 24 September 2024
+Service: Tree Surgery & Removal
+Review: Excellent job. Polite and courteous. Did the job very well, at a good price and cleaned up afterwards.
+
+Name: Kate Adams
+Platform: Bark
+Date: 20 May 2024
+Service: Tree and Shrub Planting, Maintenance, or Removal
+Review (truncated on page): I was very impressed with the speed in which Joe contacted me regarding a quote and even more so at how quickly he was able to fit in the work.
+
+The Bark page shows there are 64 total reviews over 10 pages, but only these 5 are present in the HTML I can see right now. To capture all 64, can you scroll through the remaining review pages (2–10) so they load, then tell me when you’ve done that so I can re-read the page and extract the rest in the same format?
+
+you control browser, i dont want the 1 star reviews, they can fuck right off
+Completed 66 steps
+Here are all the reviews (4★ & 5★ only — 1★ binned) ready to copy and paste:
+
+Platform: Bark
+Name: John
+Date: 14 February 2025
+Service: Tree Surgery & Removal
+Review: Quoted on the Tuesday, work completed on the Thursday. Very punctual, professional, polite and tidied up after job complete. Would highly recommend!
+
+Platform: Bark
+Name: Krys Greenland
+Date: 27 January 2025
+Service: Tree Surgery & Removal
+Review: Great, quick service. Very professional
+
+Platform: Bark
+Name: Krys Greenland
+Date: 24 January 2025
+Service: Tree Surgery & Removal
+Review: Great job cutting up a fallen ash tree. Quick response and very professional. Thank you!
+
+Platform: Bark
+Name: Anthony Phinn
+Date: 24 September 2024
+Service: Tree Surgery & Removal
+Review: Excellent job. Polite and courteous. Did the job very well, at a good price and cleaned up afterwards.
+
+Platform: Bark
+Name: Kate Adams
+Date: 20 May 2024
+Service: Tree and Shrub Planting, Maintenance, or Removal
+Review: I was very impressed with the speed in which Joe contacted me regarding a quote and even more so at how quickly he was able to fit in the work. The team were very efficient at removing a sizeable bamboo and were even able to fit in an additional task whilst on site. I will definitely use this company again and am very grateful for their hard work. Would highly recommend them.
+
+Platform: Bark
+Name: Tim Morris
+Date: 2 October 2023
+Service: Tree Surgery & Removal
+Review: Fantastic service, quick efficient and very polite hard workers, cleaned up well after the work!
+
+Platform: Bark
+Name: Joanne Sloan
+Date: 10 August 2023
+Service: Tree Surgery & Removal
+Review: Professional & courteous service, had tree stumps removed, highly recommended
+
+Platform: Bark
+Name: Mr H Kattan
+Date: 4 May 2023
+Service: Gardening
+Review: Excellent service. Joe and his brother could not have been anymore professional. They were on time, very polite and did a great job. I would not hesitate to recommend them.
+
+Platform: Bark
+Name: Jo
+Date: 28 April 2023
+Service: Tree Surgery & Removal
+Review: Excellent, friendly, polite and very well priced. Left areas tidy and kept up to date with progress. Very happy costumer would definately use again. Thankyou.
+
+Platform: Bark
+Name: Adrian Ahl
+Date: 13 April 2023
+Service: Tree Surgery & Removal
+Review: Excellent prompt service from a great team of people. Super tidy too
+
+Platform: Bark
+Name: Lesley
+Date: 12 April 2023
+Service: Tree and Shrub Planting, Maintenance, or Removal
+Review: Highly recommend. The team arrived on time and carried out the work required in shocking weather, rain and high winds. Very polite and tidy, will definitely use them again. Thank you.
+
+Platform: Bark
+Name: Mrs Yvonne Cook
+Date: 23 February 2023
+Service: Tree and Shrub Planting, Maintenance, or Removal
+Review: Joe and his colleague were very friendly and efficient - gave me a quote and we agreed price and they did the job. No fuss. Excellent customer service!! Will use again.
+
+Platform: Bark
+Name: Charlee Frost
+Date: 21 February 2023
+Service: Tree Surgery & Removal
+Review: Really pleased Thankyou, left everything clean and tidy. Done the job I wanted great. Good price. Happy customer would recommend to family and friends. And will be needing you again soon. Thanks
+
+Platform: Bark
+Name: Aaron Pennell
+Date: 21 February 2023
+Service: Tree Surgery & Removal
+Review: Little Joe's tree service did a great job on my trees and bushes I would recommend them to anyone they r nice and do a good job
+
+Platform: Bark
+Name: Mark Wonnacott
+Date: 19 November 2022
+Service: Tree Surgery & Removal
+Review: They removed a hedge for me: very quick to respond, well done and a fair price.
+
+Platform: Bark
+Name: Juliette Macpherson
+Date: 8 November 2022
+Service: Tree Surgery & Removal
+Review: Joe came & quoted for the removal of two trees. He returned the following day at the time agreed & has done a fantastic job. Really impressed with the quality of work & how they tidied up afterwards.
+
+Platform: Bark
+Name: Cindy Harbut
+Date: 5 September 2022
+Service: Tree Surgery & Removal
+Review: Excellent. Very helpful. Talked me through what he would do. Very quickly and tidy
+
+Platform: Bark
+Name: Debs
+Date: 23 August 2022
+Service: Tree Surgery & Removal
+Review: The Gentleman was the first person I actually texted after speaking to the others because he told me about his qualifications straight away and asked a lot more information about the job and was the cheapest.
+
+Platform: Bark
+Name: Simon Cheesman
+Date: 5 August 2022
+Service: Tree Surgery & Removal
+Review: They were quick to respond, polite and efficient. They cleaned up after and were very helpful.
+
+Platform: Bark
+Name: Karen Lawrence
+Date: 19 July 2022
+Service: Tree Surgery & Removal
+Review: Came out quickly after contacting us. Had to sort out access through house but they managed it. They done a great job and left everything tidy.
+
+Platform: Bark
+Name: Shirley Johnson
+Date: 24 May 2022
+Service: Tree Surgery & Removal
+Review: Very happy with the work they done and would recommend them. Saj
+
+Platform: Bark
+Name: MR CLIVE J HARVEY
+Date: 17 March 2022
+Service: Tree Surgery & Removal
+Review: He did an excellent job and cleaned up after he had finished. I would thoroughly recommend him.
+
+Platform: Bark
+Name: Stuart Crighton
+Date: 15 March 2022
+Service: Tree Surgery & Removal
+Review: Very quick response to quote request. Arrived in the time window stated and did exactly as requested in a matter of minutes.
+
+Platform: Bark
+Name: nicola Doo
+Date: 1 February 2022
+Service: Tree Surgery & Removal
+Review: Polite, professional and super quick job with very big stump! Thanks Joe and Bobby… really pleased.
+
+Platform: Bark
+Name: Stephanie Murphy
+Date: 14 January 2022
+Service: Tree Surgery & Removal
+Review: I would highly recommend. They rang me immediately with a reasonable quote and in fact did my job 2 days later as they had a cancellation.
+
+Platform: Bark
+Name: neil or penny
+Date: 6 January 2022
+Service: Tree Surgery & Removal
+Review: Phoned immediately job posted with a quote. Some extra work done while he was here.
+
+Platform: Bark
+Name: Ruth Vasse
+Date: 28 November 2021
+Service: Tree Surgery & Removal
+Review: They were very responsive and courteous and completed the job quickly. I'm happy with the quality of the work.
+
+Platform: Bark
+Name: Mandy young
+Date: 31 October 2021
+Service: Tree Surgery & Removal
+Review: Excellent job, quick and tidy ………
+
+Platform: Bark
+Name: Gareth Jarvis
+Date: 28 October 2021
+Service: Garden Clearance
+Review: I am more than pleased with their work. Did a good job and seem to be nice people. Good professional job done.
+
+Platform: Bark
+Name: Hannah
+Date: 11 October 2021
+Service: Tree Surgery & Removal
+Review: Quick response, great work at a great price
+
+Platform: Bark
+Name: Sharon Ensor
+Date: 30 September 2021
+Service: Tree Surgery & Removal
+Review: Fast, polite. Tidy, not pushy. Sent photos of certificates.
+
+Platform: Bark
+Name: Ian Abrahams
+Date: 21 September 2021
+Service: Tree Surgery & Removal
+Review: Very quick response and same day service. Cheers
+
+Platform: Bark
+Name: Trisha
+Date: 7 September 2021
+Service: Tree Surgery & Removal
+Review: I was contacted the same day! Quoted a price by photos. They arrived the same day and removed a large tree stump and a smaller tree stump! Efficient service, friendly guys. The job didn't go exactly to plan due to access issue with the machinery but they removed them both by hand. Happy with the outcome would use again.
+
+Platform: Bark
+Name: Kate yates
+Date: 29 August 2021
+Service: Tree Surgery & Removal
+Review: Great service. Would use again.
+
+Platform: Bark
+Name: Susan Lupton
+Date: 26 August 2021
+Service: Tree Surgery & Removal
+Review: Quick to respond. Carried out the work efficiently. Took off our gate without asking to gain access but did put it back properly.
+
+Platform: Bark
+Name: Robert Edes
+Date: 20 August 2021
+Service: Tree and Shrub Planting, Maintenance, or Removal
+Review: What a great company no messing around, polite, efficient and tidy, will be definitely using again.
+
+Platform: Bark
+Name: Julian francis
+Date: 14 August 2021
+Service: Tree Surgery & Removal
+Review: Quick efficient and tidy. I would recommend
+
+Platform: Bark
+Name: Richard Avery
+Date: 7 August 2021
+Service: Tree and Shrub Planting, Maintenance, or Removal
+Review: Turned up on time and completed the job quickly and effectively at the agreed price.
+
+Platform: Bark
+Name: Mrs Sharon Evans
+Date: 22 July 2021
+Service: Tree Surgery & Removal
+Review: After a brief discussion a price was agreed and the job was carried out today. It is exactly as I wanted and nobody was here to supervise, there was no mess left behind and payment was made after I had seen the completed work. Very satisfied customer 👌
+
+Platform: Bark
+Name: Richard Shuker
+Date: 17 July 2021
+Service: Tree Surgery & Removal
+Review: Extremely hard working, job well done
+
+Platform: Bark
+Name: John Turner
+Date: 27 June 2021
+Service: Tree Surgery & Removal
+Review: Hard working guys very quick workers. Would recommend
+
+Platform: Bark
+Name: Martin Williams
+Date: 26 June 2021
+Service: Tree Surgery & Removal
+Review: Highly courteous and efficient they undertook the root grinding of three stumps which they completed quickly and efficiently. I will certainly use them again.
+
+Platform: Bark
+Name: John Alkire
+Date: 14 June 2021
+Service: Tree Surgery & Removal
+Review: Once the confusion was resolved the job went well.
+
+Platform: Bark
+Name: Noelle Healy
+Date: 11 June 2021
+Service: Tree Surgery & Removal
+Review: Fantastic workers very polite it was a massive job but didn't stop until job was done cleared everything away left no mess reasonable prices hard working reliable so happy with my new hedges so thankyou
+
+Platform: Bark
+Name: Natalie Smith
+Date: 1 June 2021
+Service: Tree Surgery & Removal
+Review: Professional and speedy, did a good job getting rid of our tree stump.
+
+Platform: Bark
+Name: Harry Murray
+Date: 19 May 2021
+Service: Tree Surgery & Removal
+Review: Very quick response, with excellent rates. Really happy with the job & service.
+
+Platform: Bark
+Name: David
+Date: 15 May 2021
+Service: Tree Surgery & Removal
+Review: Friendly service, good service and super fast. Would recommend.
+
+Platform: Bark
+Name: Peter Gurd
+Date: 8 May 2021
+Service: Tree Surgery & Removal
+Review: Really nice guy; prompt, polite, efficient and a great job done
+
+Platform: Bark
+Name: Tommy
+Date: 27 April 2021
+Service: Tree Surgery & Removal
+Review: Quick, reliable and professional. Happy with the stump removal!
+
+Platform: Bark
+Name: Mr Brian Upton
+Date: 4 March 2021
+Service: Tree Surgery & Removal
+Review: Little tree came gave us a price and got on with the job of cutting down the trunk of a tree. Very polite and tidied up afterwards. Would recommend them!
+
+Platform: Bark
+Name: Steve Kempson
+Date: 25 February 2021
+Service: Tree Surgery & Removal
+Review: Polite friendly service, would recommend
+
+Platform: Bark
+Name: Ella Henly
+Date: 23 February 2021
+Service: Tree Surgery & Removal
+Review: Reliable, tidy and reasonably priced. Joe and his team did a great job at removing our tree. Highly recommend.
+
+Platform: Bark
+Name: Sam
+Date: 23 February 2021
+Service: Tree Surgery & Removal
+Review: Great to work with! Great service! Great prices!
+
+Platform: Bark
+Name: Aaron harris
+Date: 21 February 2021
+Service: Tree Surgery & Removal
+Review: We used Little Tree service for tree and branch removal in our garden. Would highly recommend. Joey and his team were professional, polite and left our garden spotless. Will definitely be using them in the future.
+
+Platform: Bark
+Name: T palmer
+Date: 21 February 2021
+Service: Tree Surgery & Removal
+Review: Great work and not as expensive as expected
+
+Platform: Bark
+Name: A silver
+Date: 21 February 2021
+Service: Tree Surgery & Removal
+Review: A++ very professional. Polite and fast
+
+Platform: Bark
+Name: Dan
+Date: 21 February 2021
+Service: Tree Surgery & Removal
+Review: Excellent fast and reliable service highly recommended a+++
+
+Platform: Bark
+Name: Dean haddrell
+Date: 21 February 2021
+Service: Tree Surgery & Removal
+Review: Joseph and his gang turned up on time and took no time to get going when they arrived. The gang was very polite and hard working. I thought the job was reasonably priced and would definitely recommend to others and we will be having the gang back in the future.
+
+Platform: Bark
+Name: Richard mirams
+Date: 21 February 2021
+Service: Tree Surgery & Removal
+Review: Great job done on my property. Friendly and professional service. Thanks guys. Would highly recommend
+
+Platform: Bark
+Name: Dean Collingwood
+Date: 21 February 2021
+Service: Tree removal
+Review: Joey and his team turned up to remove two trees they were extremely polite and done a brilliant job 5 stars would definitely use again
+
+Platform: Bark
+Name: Adam Stubbs
+Date: 21 February 2021
+Service: Tree Surgery & Removal
+Review: Great service very polite and professional fast and very competitive pricing defiantly will use again in the future

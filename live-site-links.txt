@@ -1,0 +1,17 @@
+LIVE BUSINESS LINKS
+Use these live business links throughout the build:
+
+FACEBOOK_URL = "https://www.facebook.com/profile.php?id=100064091166943"
+GOOGLE_REVIEW_URL = "https://search.google.com/local/writereview?placeid=ChIJ1TFyb_2GlSwRhFQt81c3w0Q"
+YOUTUBE_PLAYLIST_URL = "https://youtube.com/playlist?list=PLmh5zDJCEdDclDC5r8phPDsO_RzpeB4m0&si=iOLHsJ8RfU0odqb-"
+YOUTUBE_PLAYLIST_ID = "PLmh5zDJCEdDclDC5r8phPDsO_RzpeB4m0"
+YOUTUBE_PLAYLIST_EMBED_URL = "https://www.youtube.com/embed/videoseries?list=PLmh5zDJCEdDclDC5r8phPDsO_RzpeB4m0"
+
+Implementation requirements:
+- Add the Facebook link in the header, footer, contact page, and social proof sections.
+- Add a prominent “Leave us a Google review” CTA using GOOGLE_REVIEW_URL.
+- Build a video gallery section using a lightweight thumbnail-first approach.
+- Use YOUTUBE_PLAYLIST_EMBED_URL for the main playlist embed or modal player.
+- Avoid loading multiple heavy YouTube iframes on initial page render.
+- Prefer lazy-loaded embeds or click-to-load video components for performance.
+- Include a “Watch more on YouTube” CTA using YOUTUBE_PLAYLIST_URL.

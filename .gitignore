@@ -1,0 +1,46 @@
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# next.js
+/.next/
+/out/
+next-env.d.ts
+
+# scratch (image sourcing / temp build output)
+/.tmp_img/
+
+# build artifact (zipped out/, used only for manual Hostinger upload)
+/littlejoes-site.zip
+
+# production
+/build
+
+# misc
+.DS_Store
+*.pem
+Thumbs.db
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env
+.env*.local
+
+# handover note, contains a live FTP credential, keep local only
+HANDOVER.md
+
+# typescript
+*.tsbuildinfo
+
+# editor
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# claude code transient locks / local launch config
+.claude/*.lock

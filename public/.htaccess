@@ -1,0 +1,36 @@
+# Apache/LiteSpeed config for the static export on Hostinger.
+# Next exports clean URLs as /path.html; this maps /path -> /path.html so links
+# like /services/tree-surgery resolve (host-level equivalent of Vercel/Netlify).
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Real files (assets, sitemap.xml, *.html, images) serve as-is.
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # Otherwise, if a matching .html exists, serve it.
+  # (Also overrides same-named directories, e.g. /services -> /services.html.)
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.+?)/?$ /$1.html [L]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+# Security headers (host-level; the Netlify-style _headers file is ignored here).
+<IfModule mod_headers.c>
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# Long-cache the immutable hashed assets.
+<IfModule mod_expires.c>
+  ExpiresActive On
+  <FilesMatch "\.(js|css|woff2|woff|svg|png|jpg|jpeg|webp|avif|ico)$">
+    ExpiresDefault "access plus 1 year"
+  </FilesMatch>
+</IfModule>

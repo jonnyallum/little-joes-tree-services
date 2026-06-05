@@ -1,0 +1,39 @@
+{
+  "name": "little-joes-tree-services",
+  "version": "1.0.0",
+  "private": true,
+  "description": "World-class local service website for Little Joe's Tree Services, Hampshire.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "preview": "node preview-server.mjs",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "process-logo": "node scripts/process-logo.mjs"
+  },
+  "dependencies": {
+    "@hookform/resolvers": "^3.9.1",
+    "@next/third-parties": "^15.1.6",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.18.0",
+    "lucide-react": "^0.469.0",
+    "next": "^15.1.6",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-hook-form": "^7.54.2",
+    "tailwind-merge": "^2.6.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.18.0",
+    "eslint-config-next": "^15.1.6",
+    "postcss": "^8.5.1",
+    "sharp": "^0.33.5",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.7.3"
+  }
+}
