@@ -21,8 +21,23 @@ export function HeroSection() {
   ];
 
   return (
-    <section className="surface-mesh relative overflow-hidden">
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-6 sm:py-20 lg:grid-cols-12 lg:gap-10 lg:px-8 lg:py-28">
+    <section className="relative overflow-hidden bg-forest-950">
+      {/* Background Video */}
+      <div className="absolute inset-0 z-0">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="h-full w-full object-cover opacity-40"
+        >
+          <source src="/video/hero-bg.mp4" type="video/mp4" />
+        </video>
+        {/* Scrim/Overlay to ensure text readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-forest-950/80 via-forest-950/40 to-forest-950/80" />
+      </div>
+
+      <div className="relative z-10 mx-auto grid max-w-7xl gap-12 px-5 py-16 sm:px-6 sm:py-20 lg:grid-cols-12 lg:gap-10 lg:px-8 lg:py-28">
         {/* Copy */}
         <div className="lg:col-span-7 lg:pr-6">
           <p className="animate-fade-up inline-flex items-center gap-2 rounded-full bg-forest-950/85 px-4 py-1.5 text-xs font-semibold uppercase tracking-brand text-[#e9b94e] shadow-soft ring-1 ring-[#e9b94e]/40 backdrop-blur-sm">

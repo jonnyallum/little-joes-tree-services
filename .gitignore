@@ -45,3 +45,4 @@ HANDOVER.md
 
 # claude code transient locks / local launch config
 .claude/*.lock
+.env.local

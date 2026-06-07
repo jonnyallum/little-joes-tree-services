@@ -18,6 +18,7 @@ export const mainNav: { label: string; href: string; children?: NavLink[] }[] = 
     children: primaryLocations.map((l) => ({ label: l.name, href: `/areas/${l.slug}` })),
   },
   { label: "Reviews", href: "/reviews" },
+  { label: "Gallery", href: "/gallery" },
   { label: "About", href: "/about" },
   { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
