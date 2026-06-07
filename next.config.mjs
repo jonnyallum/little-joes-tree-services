@@ -13,7 +13,7 @@ const nextConfig = {
 
   reactStrictMode: true,
   poweredByHeader: false,
-  trailingSlash: false,
+  trailingSlash: true,
 
   // Pin the workspace root to this project. Without this, a stray lockfile
   // higher up (e.g. C:\Users\Dell\package-lock.json) makes Next infer the wrong
