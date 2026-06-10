@@ -21,6 +21,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/reviews", priority: 0.6, freq: "monthly" },
     { path: "/faq", priority: 0.5, freq: "yearly" },
     { path: "/contact", priority: 0.8, freq: "yearly" },
+    { path: "/card", priority: 0.3, freq: "yearly" },
   ];
 
   const servicePaths = serviceSlugs.map((slug) => ({
