@@ -31,6 +31,9 @@ export const siteConfig = {
   phone: "07519 744 790",
   // tel: href uses no spaces, used wherever the number is clickable.
   phoneHref: "tel:07519744790",
+  // WhatsApp deep link (same mobile number) with a friendly prefilled opener.
+  whatsappHref:
+    "https://wa.me/447519744790?text=Hi%20Joe%2C%20I%27d%20like%20a%20quote%20please.",
   email: "info@littlejoestreeservices.co.uk",
   // Where the contact form delivers (kept in sync with CONTACT_TO_EMAIL env).
   enquiryEmail: "info@littlejoestreeservices.co.uk",

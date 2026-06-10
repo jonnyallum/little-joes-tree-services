@@ -20,6 +20,7 @@ export type GaEvent =
   | "form_submission"
   | "google_review_click"
   | "facebook_click"
+  | "whatsapp_click"
   | "youtube_play"
   | "quote_cta_click";
 
