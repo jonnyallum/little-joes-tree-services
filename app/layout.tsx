@@ -1,10 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
-import { Header } from "@/components/Header";
-import { Footer } from "@/components/Footer";
 import { ForestBackdrop } from "@/components/ForestBackdrop";
-import { ReviewTicker } from "@/components/ReviewTicker";
 import { Analytics } from "@/components/Analytics";
 import { JsonLd } from "@/components/ui/JsonLd";
 import { localBusinessSchema, websiteSchema } from "@/lib/schema";
@@ -55,25 +52,16 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en-GB" className={`${inter.variable} ${fraunces.variable}`}>
-      <body className="min-h-screen bg-forest-950 font-sans antialiased pb-12 sm:pb-14">
+      <body className="min-h-screen bg-forest-950 font-sans antialiased">
         {/* Site-wide structured data (LocalBusiness + WebSite). */}
         <JsonLd data={[localBusinessSchema(), websiteSchema()]} />
 
         {/* Full-bleed photorealistic woodland backdrop behind every section. */}
         <ForestBackdrop />
 
-        {/* Skip link for keyboard / screen-reader users. */}
-        <a
-          href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-lg focus:bg-forest-800 focus:px-4 focus:py-2 focus:text-bone-50"
-        >
-          Skip to content
-        </a>
-
-        <Header />
-        <main id="main">{children}</main>
-        <Footer />
-        <ReviewTicker />
+        {/* Header/footer/ticker live in app/(site)/layout.tsx so standalone
+            pages like /card render without the site chrome. */}
+        {children}
 
         <Analytics />
       </body>

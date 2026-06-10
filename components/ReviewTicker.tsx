@@ -26,29 +26,39 @@ function Pill({ review }: { review: Review }) {
   );
 }
 
-export function ReviewTicker() {
-  const items = tickerReviews;
+/**
+ * The scrolling strip itself, reusable anywhere (the site-wide bottom ticker,
+ * the /card business card). Pass `reviews` to scroll a custom selection.
+ */
+export function ReviewMarquee({ reviews = tickerReviews }: { reviews?: Review[] }) {
+  const items = reviews;
   // Slower for more items so it stays readable; clamped to a sane range.
   const duration = Math.min(600, Math.max(120, items.length * 5));
 
+  return (
+    <div className="group flex w-full overflow-hidden py-2 mask-fade-x">
+      <div
+        className="flex shrink-0 items-center group-hover:[animation-play-state:paused]"
+        style={{ animation: `marquee ${duration}s linear infinite` }}
+      >
+        {items.map((r, i) => (
+          <Pill key={`a-${i}`} review={r} />
+        ))}
+        {items.map((r, i) => (
+          <Pill key={`b-${i}`} review={r} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export function ReviewTicker() {
   return (
     <aside
       aria-label="What our customers say"
       className="fixed inset-x-0 bottom-0 z-40 border-t border-white/10 surface-forest print:hidden"
     >
-      <div className="group flex w-full overflow-hidden py-2 mask-fade-x">
-        <div
-          className="flex shrink-0 items-center group-hover:[animation-play-state:paused]"
-          style={{ animation: `marquee ${duration}s linear infinite` }}
-        >
-          {items.map((r, i) => (
-            <Pill key={`a-${i}`} review={r} />
-          ))}
-          {items.map((r, i) => (
-            <Pill key={`b-${i}`} review={r} />
-          ))}
-        </div>
-      </div>
+      <ReviewMarquee />
     </aside>
   );
 }

@@ -75,6 +75,8 @@ export const siteConfig = {
   // Live business links, do not change without confirming with the client.
   url: SITE_URL,
   facebookUrl: "https://www.facebook.com/profile.php?id=100064091166943",
+  facebookReviewUrl:
+    "https://www.facebook.com/p/Little-Joes-Tree-Service-100064091166943/reviews/",
   googleReviewUrl:
     "https://search.google.com/local/writereview?placeid=ChIJ1TFyb_2GlSwRhFQt81c3w0Q",
   youtubePlaylistUrl:
@@ -82,6 +84,18 @@ export const siteConfig = {
   youtubePlaylistId: "PLmh5zDJCEdDclDC5r8phPDsO_RzpeB4m0",
   youtubePlaylistEmbedUrl:
     "https://www.youtube.com/embed/videoseries?list=PLmh5zDJCEdDclDC5r8phPDsO_RzpeB4m0",
+
+  /* -------------------------------------------------- digital business card */
+  // The shareable card at /card — what NFC taps and QR scans open. Details
+  // match the vCard served from public/card/joseph-ennis.vcf.
+  card: {
+    person: "Joseph Ennis",
+    role: "Owner & Tree Surgeon",
+    location: "Havant, Hampshire",
+    country: "United Kingdom",
+    directionsUrl: "https://maps.google.com/?q=Little+Joes+Tree+Services+Havant+Hampshire",
+    vcardPath: "/card/joseph-ennis.vcf",
+  },
 
   /* --------------------------------------------------------------- analytics */
   // Empty string => GA4 is not loaded at all (no duplicate/dummy tracking).

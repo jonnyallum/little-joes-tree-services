@@ -2,9 +2,27 @@ import Link from "next/link";
 import { Home, Phone, TreeDeciduous } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { buttonVariants } from "@/components/ui/Button";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
+import { ReviewTicker } from "@/components/ReviewTicker";
 import { siteConfig } from "@/site-config";
 
+// The root not-found renders outside the (site) route group, so it brings the
+// site chrome along itself to look like every other page.
 export default function NotFound() {
+  return (
+    <div className="pb-12 sm:pb-14">
+      <Header />
+      <main>
+        <NotFoundBody />
+      </main>
+      <Footer />
+      <ReviewTicker />
+    </div>
+  );
+}
+
+function NotFoundBody() {
   return (
     <section className="surface-forest">
       <Container size="narrow">
@@ -38,3 +56,4 @@ export default function NotFound() {
     </section>
   );
 }
+
