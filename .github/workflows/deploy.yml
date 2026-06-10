@@ -47,7 +47,11 @@ jobs:
           FTP_USERNAME: ${{ secrets.FTP_USERNAME }}
           FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         run: |
+          # ssl-protect-data: Hostinger's FTP requires TLS on the data channel
+          # too (PROT P) or listings/uploads stall. dns:order inet: skip IPv6,
+          # GitHub runners have no IPv6 route to Hostinger.
           lftp -u "$FTP_USERNAME","$FTP_PASSWORD" \
-            -e "set ftp:ssl-force true; set ssl:verify-certificate no; set net:max-retries 3; set net:timeout 30; \
+            -e "set ftp:ssl-force true; set ftp:ssl-protect-data true; set ssl:verify-certificate no; \
+                set dns:order inet; set net:max-retries 2; set net:timeout 30; \
                 mirror -R --delete --parallel=4 --verbose=1 out/ ./; quit" \
             "ftp://$FTP_SERVER"
